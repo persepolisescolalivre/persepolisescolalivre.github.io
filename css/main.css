@@ -3,6 +3,15 @@
 
 @import 'nav.css';
 
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+    
+  }
+
+*{
+    box-sizing: border-box;
+  }
 
 .nav{
     margin: 1em;
