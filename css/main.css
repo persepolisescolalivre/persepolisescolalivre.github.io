@@ -1,13 +1,7 @@
 /*import fonts from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:wght@100;300&family=Roboto:wght@300&display=swap');
 
-@import 'nav.css';
 
-[class*="col-"] {
-    float: left;
-    padding: 5px;
-    
-  }
 
 .nav{
     margin: 1em;
@@ -95,7 +89,7 @@
 
 :root{
     --light-gray: #2b3032a1;
-    --primary-color: #08da2b;
+    --primary-color: #38eb20;
     --border: #2b303218;
     --text-color: #ff686b;
     --roboto:"Roboto", sans-serif;
@@ -275,36 +269,8 @@ a.card-btn{
     text-decoration: line-through;
 }
 
-.pre-btn, .nxt-btn{
-    border: none;
-    width: 10vw;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
-    cursor: pointer;
-    z-index: 8;
-}
 
-.pre-btn{
-    left: 0;
-    transform: rotate(180deg);
-}
 
-.nxt-btn{
-    right: 0;
-}
-
-.pre-btn img, .nxt-btn img{
-    opacity: 0;
-}
-
-.pre-btn:hover img, .nxt-btn:hover img{
-    opacity: 0;
-}
 
 .collection-container{
     width: 100%;
@@ -323,7 +289,16 @@ a.card-btn{
     object-fit: cover;
 }
 
-
+.collection p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
 
 .collection:nth-child(3){
     grid-column: span 2;
